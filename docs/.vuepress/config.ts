@@ -14,9 +14,9 @@
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
-
+const paths="vuepress_plume";
 export default defineUserConfig({
-  base: process.env.NODE_ENV === 'development' ? '/' : '/vuepress_plume/',
+  base: `/${paths}/`,
   lang: 'zh-CN',
   locales: {
     '/': {
