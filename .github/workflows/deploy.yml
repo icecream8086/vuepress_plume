@@ -20,7 +20,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 8.x  # 指定 pnpm 主版本（会自动安装最新 8.x 版本）
+          version: 8  # 指定 pnpm 主版本（会自动安装最新 8.x 版本）
           # 或精确版本：version: 8.15.3
 
       - name: Setup Node.js
