@@ -1,5 +1,5 @@
 ---
-title: 比较 $100^{99}$ 和 $99^{100}$ 的大小,用于测试mmathjax数学公式渲染
+title: 比较 $100^{99}$ 和 $99^{100}$ 的大小,用于测试mmathjax数学公式渲染,标题似乎不支持
 createTime: 2025/06/06 18:11:40
 permalink: /article/0le3vzo7/
 ---
