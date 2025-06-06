@@ -16,7 +16,7 @@ import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 
 export default defineUserConfig({
-  base: `/vuepress_plume/`,
+  base: process.env.NODE_ENV === 'development' ? '/' : '/vuepress_plume/',
   lang: 'zh-CN',
   locales: {
     '/': {
