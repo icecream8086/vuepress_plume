@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          # “最近更新时间” 等 git 日志相关信息，需要拉取全部提交记录
+          # "最近更新时间" 等 git 日志相关信息，需要拉取全部提交记录
           # "Last updated time" and other git log-related information require fetching all commit records.
           fetch-depth: 0
 
@@ -26,18 +26,22 @@ jobs:
           # 选择要使用的 node 版本
           node-version: 22
 
+      # 清除缓存
+      # Clear cache
+      - name: Clear npm cache
+        run: |
+          npm cache clean --force
+          rm -rf node_modules
+
       # 安装依赖
       # Install dependencies
       - name: Install Dependencies
         run: npm ci
 
-
-
       # 运行构建脚本
       # Run the build script
       - name: Build VuePress site
         run: npm run docs:build
-
 
       # 查看 workflow 的文档来获取更多信息
       # @see https://github.com/crazy-max/ghaction-github-pages
