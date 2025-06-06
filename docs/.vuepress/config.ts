@@ -9,35 +9,44 @@
  * 特别的，请不要在两个配置文件中重复配置相同的项，当前文件的配置项会被覆盖
  */
 
-//   base: '/vuepress_plume/',
-
+/**
+ * VuePress Configuration
+ * @see https://theme-plume.vuejs.press/config/intro/
+ */
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
-const paths="vuepress_plume";
+
+const DEBUG = false
+const BASE_PATH = 'vuepress_plume'
+const BASE_URL = DEBUG ? '/' : `/${BASE_PATH}/`
+// const BASE_URL = '/'
 export default defineUserConfig({
-  base: `/${paths}/`,
+  base: BASE_URL,
   lang: 'zh-CN',
   locales: {
     '/': {
       title: 'My Vuepress Site',
       lang: 'zh-CN',
-      description: '',
+      description: '网站描述',
     },
     '/en/': {
       title: 'My Vuepress Site',
       lang: 'en-US',
-      description: '',
+      description: 'Website description',
     },
   },
 
   head: [
-    // 配置站点图标
-    ['link', { rel: 'icon', type: 'image/png', href: 'https://theme-plume.vuejs.press/favicon-32x32.png' }],
+    ['link', { 
+      rel: 'icon', 
+      type: 'image/png', 
+      href: 'https://theme-plume.vuejs.press/favicon-32x32.png' 
+    }],
   ],
 
   bundler: viteBundler(),
-  shouldPrefetch: false, // 站点较大，页面数量较多时，不建议启用
+  shouldPrefetch: false,
 
   theme: plumeTheme({
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
