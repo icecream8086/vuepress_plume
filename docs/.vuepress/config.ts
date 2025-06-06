@@ -16,7 +16,7 @@ import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 
 export default defineUserConfig({
-  base: '/vuepresspages/',
+  base: '/vuepress_plume/',
   lang: 'zh-CN',
   locales: {
     '/': {
@@ -75,7 +75,7 @@ export default defineUserConfig({
      * 编译缓存，加快编译速度
      * @see https://theme-plume.vuejs.press/config/basic/#cache
      */
-    cache: 'filesystem',
+    cache: 'memory',
 
     /**
      * 为 markdown 文件自动添加 frontmatter 配置
