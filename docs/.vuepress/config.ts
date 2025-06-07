@@ -17,7 +17,7 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 
-const DEBUG = false
+const DEBUG = true
 const BASE_PATH = 'vuepress_plume'
 const BASE_URL = DEBUG ? '/' : `/${BASE_PATH}/`
 // const BASE_URL = '/'
