@@ -1,0 +1,3 @@
+Sitemap: https://icecream8086.github.io/sitemap.xml
+User-agent:*
+Disallow:
