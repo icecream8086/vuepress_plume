@@ -34,6 +34,10 @@ flowchart TD
     J --> F
 ```
 
+![ ](../public/preview/image/blog_898d5c1ed21b0ef4a9c4227d9bc451da81cb3eb0.jpg)
+![ ](../public/preview/image/blog_2881057-605fc10a4f-00000003.webp)
+![ ](../public/preview/image/beer-pilot.jpg)
+
 ### 图表说明：
 1. **逻辑路径**：从错误出发，分3种原因展开解决方案。
 2. **关键操作**：用绿色矩形标出GitHub后台的具体操作位置。

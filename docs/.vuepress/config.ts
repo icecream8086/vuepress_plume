@@ -13,6 +13,7 @@
  * VuePress Configuration
  * @see https://theme-plume.vuejs.press/config/intro/
  */
+const CDN_ENV = true
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
@@ -194,7 +195,8 @@ export default defineUserConfig({
      * 资源链接替换
      * @see https://theme-plume.vuejs.press/guide/features/replace-assets/
      */
-    // replaceAssets: 'https://cdn.example.com',
+    replaceAssets: CDN_ENV ? 'https://r2.hexgrid.ink/' : false
+
 
     /**
      * 加密功能
