@@ -13,7 +13,7 @@
  * VuePress Configuration
  * @see https://theme-plume.vuejs.press/config/intro/
  */
-const CDN_ENV = true
+const isProd = process.env.NODE_ENV === 'production'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
@@ -195,7 +195,7 @@ export default defineUserConfig({
      * 资源链接替换
      * @see https://theme-plume.vuejs.press/guide/features/replace-assets/
      */
-    replaceAssets: CDN_ENV ? 'https://r2.hexgrid.ink/' : false
+    replaceAssets: isProd ? 'https://r2.hexgrid.ink/' : false
 
 
     /**
