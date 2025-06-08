@@ -35,8 +35,9 @@ flowchart TD
 ```
 
 ![ ](/public/preview/image/blog_898d5c1ed21b0ef4a9c4227d9bc451da81cb3eb0.jpg)
-![ ](/public/preview/image/blog_2881057-605fc10a4f-00000003.webp)
+![ ](/public/preview/image/90951845_p0.png)
 ![ ](/public/preview/image/beer-pilot.jpg)
+![ ](/public/preview/image/blog_2881057-605fc10a4f-00000003.webp)
 
 ### 图表说明：
 1. **逻辑路径**：从错误出发，分3种原因展开解决方案。
