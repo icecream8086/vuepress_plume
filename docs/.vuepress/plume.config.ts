@@ -40,10 +40,10 @@ export default defineThemeConfig({
   // createTime: true, // 是否显示文章创建时间
 
   /* 站点页脚 */
-  // footer: {
-  //   message: 'Power by <a target="_blank" href="https://v2.vuepress.vuejs.org/">VuePress</a> & <a target="_blank" href="https://theme-plume.vuejs.press">vuepress-theme-plume</a>',
-  //   copyright: '',
-  // },
+  footer: {
+    message: 'Power by <a target="_blank" href="https://v2.vuepress.vuejs.org/">VuePress</a> & <a target="_blank" href="https://theme-plume.vuejs.press">vuepress-theme-plume</a>',
+    copyright: '',
+  },
 
   /* 过渡动画 @see https://theme-plume.vuejs.press/config/basic/#transition */
   // transition: {
@@ -59,8 +59,8 @@ export default defineThemeConfig({
        */
       profile: {
         avatar: 'https://theme-plume.vuejs.press/plume.png',
-        name: 'My Vuepress Site',
-        description: '',
+        name: '蜂巢网格',
+        description: `icecream8086's blog`,
         // circle: true,
         // location: '',
         // organization: '',
@@ -86,7 +86,7 @@ export default defineThemeConfig({
        */
       profile: {
         avatar: 'https://theme-plume.vuejs.press/plume.png',
-        name: 'My Vuepress Site',
+        name: 'Hex Grid',
         description: '',
         // circle: true,
         // location: '',
