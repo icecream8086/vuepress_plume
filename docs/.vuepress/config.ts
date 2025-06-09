@@ -17,6 +17,7 @@ const CDN_ENV = true
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
+import { revealJsPlugin } from '@vuepress/plugin-revealjs'
 
 const DEBUG = true
 const BASE_PATH = 'icecream8086'
@@ -27,14 +28,14 @@ export default defineUserConfig({
   lang: 'zh-CN',
   locales: {
     '/': {
-      title: 'My Vuepress Site',
+      title: `icecream8086's blog`,
       lang: 'zh-CN',
-      description: '网站描述',
+      description: 'todo...',
     },
     '/en/': {
-      title: 'My Vuepress Site',
+      title: `icecream8086's blog`,
       lang: 'en-US',
-      description: 'Website description',
+      description: 'todo...',
     },
   },
 
@@ -204,4 +205,9 @@ export default defineUserConfig({
      */
     // encrypt: {},
   }),
+  plugins: [
+    revealJsPlugin({
+      // 插件选项
+    }),
+  ],
 })

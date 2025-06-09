@@ -13,7 +13,13 @@ export const zhNavbar = defineNavbarConfig([
   { text: '归档', link: '/blog/archives/' },
   {
     text: '笔记',
-    items: [{ text: '示例', link: '/notes/demo/README.md' }]
+    items: [
+      { text: '示例', link: '/notes/demo/README.md' }, 
+      { text: '数据结构', link: '/notes/test2/ts2.md' },
+      { text: '计算机网络', link: '/notes/network/about.md' },
+      { text: '操作系统', link: '/notes/os/about.md' }
+
+    ]
   },
 ])
 

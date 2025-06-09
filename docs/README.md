@@ -7,16 +7,20 @@ config:
     full: true
     background: tint-plate
     hero:
-      name: Theme Plume
-      tagline: VuePress Next Theme
-      text: 一个简约的，功能丰富的 vuepress 文档&博客 主题
+      name: 蜂巢网格
+      tagline: icecream8086's blog
+      text: 个人博客
       actions:
         -
           theme: brand
-          text: 博客
+          text: 博客 →
           link: /blog/
+        -
+          theme: brand
+          text: About →
+          link: /article/reepisk6/
         -
           theme: alt
           text: Github →
-          link: https://github.com/pengzhanbo/vuepress-theme-plume
+          link: https://github.com/icecream8086
 ---
